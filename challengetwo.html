@@ -1,0 +1,51 @@
+<!-- RocketSeaat - Desafio 2 - Formuário 
+
+### Criando o formulário
+
+- Dentro do formulário adicione um `fieldset` com `legend` "Entre em contato"
+- Adicione um `select` para que o usuário possa escolher o assunto do contato (ex: suporte, sugestão e reclamação)
+- Adicione campos para que o usuário possa escrever seu **nome completo** e **e-mail**
+    - Lembre-se de usar o `type` correto para cada tipo de input
+- Adicione uma área de texto para que o usuário possa enviar uma **mensagem**
+- Adicione um campo com um `checkbox` e o texto "Aceito receber novidades por e-mail"
+- O formulário deve ter um botão "Enviar"
+
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Entre em Contato</legend>
+        <p>Assunto: <select name="select">
+            <option value="valor1"selected></option>
+            <option value="valor2">Sugestão</option>
+            <option value="valor3">Reclamação</option>
+            <option value="valor4">Suporte</option>
+          </select></p>
+
+          <p>Nome Completo:<br>
+          <input type="text" name="nomeCompleto" id="nomeCompleto" placeholder="Seu nome">
+          </p>
+
+          <p>E-mail:<br><input type="email" name="email" id="email" placeholder="email@seudominio.com">
+          </p>
+
+          <p>Mensagem:<br>
+            <textarea rows="5" cols="25" name="mensagem" placeholder=""></textarea>
+          </p>
+
+          <p><input type="checkbox" name="checkbox1">Aceito receber nividades por e-mail</p>
+
+          <p><input type="submit" name="submit" id="submit" placeholder="Enviar" ></p>
+
+    </fieldset>
+
+</body>
+</html>
